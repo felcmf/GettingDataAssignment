@@ -13,7 +13,6 @@ headers <- read.table("features.txt")
 headers <- c("Subject", "Activity", headers[,2]) 
 
 # Merges the training and the test sets to create one data set.
-# Appropriately labels the data set with descriptive variable names. 
 # Merging Data to form a dataset "data"
 train <- cbind(subjecttrain, ytrain, xtrain)
 test <- cbind(subjecttest, ytest, xtest)
@@ -34,6 +33,16 @@ data$Activity <- recode(data$Activity,
                         '4'="SITTING",
                         '5'="STANDING",
                         '6'="LAYING")
+
+# Appropriately labels the data set with descriptive variable names.
+# Replace the short forms in the headers with the full forms.
+
+names(data) <- gsub("^t", "time", names(data))
+names(data) <- gsub("Acc", "Accelerometer", names(data))
+names(data) <- gsub("Gyro", "Gyroscope", names(data))
+names(data) <- gsub("Mag", "Magnitude", names(data))
+names(data) <- gsub("^f", "frequency", names(data))
+names(data) <- gsub("BodyBody", "Body", names(data))
 
 # From the data set in step 4, creates a second, independent tidy data set with 
 # the average of each variable for each activity and each subject.
