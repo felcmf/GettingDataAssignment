@@ -1,4 +1,4 @@
-# This codebook provides details on cleandata.csv
+# This codebook provides details on cleandata.txt
 
 # Dataset
 # This dataset was transformed from the source files downloaded from:
