@@ -18,7 +18,8 @@
 # 4. Add descriptive variable names as headers to the variables.  
 # 5. Extracts only the measurements on the mean and standard deviation for each measurement by filtering for "mean()" and "std()" in variable names. 
 # 6. Replace code labels in Activity Columnn with the descriptive activity names.
-# 7. For each individual and each activity, compute column means and add to output dataset.
+# 7. Replace short forms in headers with long forms.
+# 8. For each individual and each activity, compute column means and add to output dataset.
 
 # Code Book
 # 'CodeBook.md': Describes the variables in the output file. 
