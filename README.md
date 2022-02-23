@@ -12,13 +12,16 @@
 
 # Scripts
 # 'run_Analysis.R': R script which does the following:
-# 1. Read the source data files & merge the training and test sets to create one dataset with descriptive variable names
-# 2. Extracts only the measurements on the mean and standard deviation for each measurement
-# 3. Use the descriptive activity names to name the activities in the dataset
-# 4. Create a new dataset with the mean for each variable for each activity and each subject.
+# 1. Read the 6 source data files
+# 2. Merge the subject labels, activity labels and training data to 1 dataset. Repeat for test data. 
+# 3. Merge the training and test sets to create one dataset.
+# 4. Add descriptive variable names as headers to the variables.  
+# 5. Extracts only the measurements on the mean and standard deviation for each measurement by filtering for "mean()" and "std()" in variable names. 
+# 6. Replace code labels in Activity Columnn with the descriptive activity names.
+# 7. For each individual and each activity, compute column means and add to output dataset.
 
 # Code Book
-# 'CodeBook.md': Describes the steps taken in the script to create the output file. 
+# 'CodeBook.md': Describes the variables in the output file. 
 
 # Output Data Files
-# 'cleandata.csv': New dataset with the mean for each variable for each activity and each subject
+# 'cleandata.txt': New dataset with the mean for each variable for each activity and each subject
