@@ -23,10 +23,7 @@ colnames(data) <- headers
 # Extracts only the measurements on the mean and standard deviation for each 
 # measurement. 
 # Extracting only mean and std deviation data to form a dataset "data"
-meancols <- grep("*mean*", headers)
-stdcols <- grep("*std*", headers)
-columns <- sort(c(1, 2, meancols, stdcols))
-data <- data[,columns]
+data <- select(data, 1:2, contains("mean()") | contains("std()"))
 
 # Uses descriptive activity names to name the activities in the data set
 # Replacing activity labels with activity names to form dataset "data"
@@ -59,5 +56,5 @@ for (i in subjects) {
 colnames(cleandata) <- names(data)
 
 # Write dataset "cleandata" to file called "cleandata.csv"
-write.table(cleandata, "cleandata.csv", sep = ",", row.names=FALSE)
+write.table(cleandata, "cleandata.txt", sep = ",", row.names=FALSE)
 
