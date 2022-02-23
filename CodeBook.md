@@ -15,74 +15,74 @@
 # 5. The means of each variable measured was computed for each subject-activity pair and stored in the output dataset.
  
 # Variables 
-# 1 Subjects: An indicator for each of the subjects in the experiment. Values are numeric values 1-30
+# 1 Subject: An indicator for each of the subjects in the experiment. Values are numeric values 1-30
 # 2 Activity: An indicator for each of the 6 activities. Values are WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING and LAYING.
-# 3 tBodyAcc-mean()-X
-# 4 tBodyAcc-mean()-Y
-# 5 tBodyAcc-mean()-Z
-# 6 tBodyAcc-std()-X
-# 7 tBodyAcc-std()-Y
-# 8 tBodyAcc-std()-Z
-# 9 tGravityAcc-mean()-X
-# 10 tGravityAcc-mean()-Y
-# 11 tGravityAcc-mean()-Z
-# 12 tGravityAcc-std()-X
-# 13 tGravityAcc-std()-Y
-# 14 tGravityAcc-std()-Z
-# 15 tBodyAccJerk-mean()-X
-# 16 tBodyAccJerk-mean()-Y
-# 17 tBodyAccJerk-mean()-Z
-# 18 tBodyAccJerk-std()-X
-# 19 tBodyAccJerk-std()-Y
-# 20 tBodyAccJerk-std()-Z
-# 21 tBodyGyro-mean()-X
-# 22 tBodyGyro-mean()-Y
-# 23 tBodyGyro-mean()-Z
-# 24 tBodyGyro-std()-X
-# 25 tBodyGyro-std()-Y
-# 26 tBodyGyro-std()-Z
-# 27 tBodyGyroJerk-mean()-X
-# 28 tBodyGyroJerk-mean()-Y
-# 29 tBodyGyroJerk-mean()-Z
-# 30 tBodyGyroJerk-std()-X
-# 31 tBodyGyroJerk-std()-Y
-# 32 tBodyGyroJerk-std()-Z
-# 33 tBodyAccMag-mean()
-# 34 tBodyAccMag-std()
-# 35 tGravityAccMag-mean()
-# 36 tGravityAccMag-std()
-# 37 tBodyAccJerkMag-mean()
-# 38 tBodyAccJerkMag-std()
-# 39 tBodyGyroMag-mean()
-# 40 tBodyGyroMag-std()
-# 41 tBodyGyroJerkMag-mean()
-# 42 tBodyGyroJerkMag-std()
-# 43 fBodyAcc-mean()-X
-# 44 fBodyAcc-mean()-Y
-# 45 fBodyAcc-mean()-Z
-# 46 fBodyAcc-std()-X
-# 47 fBodyAcc-std()-Y
-# 48 fBodyAcc-std()-Z
-# 49 fBodyAccJerk-mean()-X
-# 50 fBodyAccJerk-mean()-Y
-# 51 fBodyAccJerk-mean()-Z
-# 52 fBodyAccJerk-std()-X
-# 53 fBodyAccJerk-std()-Y
-# 54 fBodyAccJerk-std()-Z
-# 55 fBodyGyro-mean()-X
-# 56 fBodyGyro-mean()-Y
-# 57 fBodyGyro-mean()-Z
-# 58 fBodyGyro-std()-X
-# 59 fBodyGyro-std()-Y
-# 60 fBodyGyro-std()-Z
-# 61 fBodyAccMag-mean()
-# 62 fBodyAccMag-std()
-# 63 fBodyBodyAccJerkMag-mean()
-# 64 fBodyBodyAccJerkMag-std()
-# 65 fBodyBodyGyroMag-mean()
-# 66 fBodyBodyGyroMag-std()
-# 67 fBodyBodyGyroJerkMag-mean()
-# 68 fBodyBodyGyroJerkMag-std()
+# timeBodyAccelerometer-mean()-X
+# timeBodyAccelerometer-mean()-Y
+# timeBodyAccelerometer-mean()-Z
+# timeGravityAccelerometer-mean()-X
+# timeGravityAccelerometer-mean()-Y
+# timeGravityAccelerometer-mean()-Z
+# timeBodyAccelerometerJerk-mean()-X
+# timeBodyAccelerometerJerk-mean()-Y
+# timeBodyAccelerometerJerk-mean()-Z
+# timeBodyGyroscope-mean()-X
+# timeBodyGyroscope-mean()-Y
+# timeBodyGyroscope-mean()-Z
+# timeBodyGyroscopeJerk-mean()-X
+# timeBodyGyroscopeJerk-mean()-Y
+# timeBodyGyroscopeJerk-mean()-Z
+# timeBodyAccelerometerMagnitude-mean()
+# timeGravityAccelerometerMagnitude-mean()
+# timeBodyAccelerometerJerkMagnitude-mean()
+# timeBodyGyroscopeMagnitude-mean()
+# timeBodyGyroscopeJerkMagnitude-mean()
+# frequencyBodyAccelerometer-mean()-X
+# frequencyBodyAccelerometer-mean()-Y
+# frequencyBodyAccelerometer-mean()-Z
+# frequencyBodyAccelerometerJerk-mean()-X
+# frequencyBodyAccelerometerJerk-mean()-Y
+# frequencyBodyAccelerometerJerk-mean()-Z
+# frequencyBodyGyroscope-mean()-X
+# frequencyBodyGyroscope-mean()-Y
+# frequencyBodyGyroscope-mean()-Z
+# frequencyBodyAccelerometerMagnitude-mean()
+# frequencyBodyAccelerometerJerkMagnitude-mean()
+# frequencyBodyGyroscopeMagnitude-mean()
+# frequencyBodyGyroscopeJerkMagnitude-mean()
+# timeBodyAccelerometer-std()-X
+# timeBodyAccelerometer-std()-Y
+# timeBodyAccelerometer-std()-Z
+# timeGravityAccelerometer-std()-X
+# timeGravityAccelerometer-std()-Y
+# timeGravityAccelerometer-std()-Z
+# timeBodyAccelerometerJerk-std()-X
+# timeBodyAccelerometerJerk-std()-Y
+# timeBodyAccelerometerJerk-std()-Z
+# timeBodyGyroscope-std()-X
+# timeBodyGyroscope-std()-Y
+# timeBodyGyroscope-std()-Z
+# timeBodyGyroscopeJerk-std()-X
+# timeBodyGyroscopeJerk-std()-Y
+# timeBodyGyroscopeJerk-std()-Z
+# timeBodyAccelerometerMagnitude-std()
+# timeGravityAccelerometerMagnitude-std()
+# timeBodyAccelerometerJerkMagnitude-std()
+# timeBodyGyroscopeMagnitude-std()
+# timeBodyGyroscopeJerkMagnitude-std()
+# frequencyBodyAccelerometer-std()-X
+# frequencyBodyAccelerometer-std()-Y
+# frequencyBodyAccelerometer-std()-Z
+# frequencyBodyAccelerometerJerk-std()-X
+# frequencyBodyAccelerometerJerk-std()-Y
+# frequencyBodyAccelerometerJerk-std()-Z
+# frequencyBodyGyroscope-std()-X
+# frequencyBodyGyroscope-std()-Y
+# frequencyBodyGyroscope-std()-Z
+# frequencyBodyAccelerometerMagnitude-std()
+# frequencyBodyAccelerometerJerkMagnitude-std()
+# frequencyBodyGyroscopeMagnitude-std()
+# frequencyBodyGyroscopeJerkMagnitude-std()
 
 # Features for the source database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) 
 # were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to 
